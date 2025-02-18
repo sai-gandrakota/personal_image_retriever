@@ -6,6 +6,7 @@ With the increasing volume of digital images, finding specific photos in large, 
 - [Features](#features)
 - [How It Works](#how-it-works)
 - [Folder Structure](#folder-structure)
+- [Installation and Usage](#installation-and-usage)
 - [Tools and Technologies](#tools-and-technologies)
 
 ## Features
@@ -31,28 +32,40 @@ Here is the structure of the project:
 ```plaintext
   <Personal Image Retriever>/
   │
-  ├── experimentation/
+  ├── assets/
+  │   ├── 
+  │   ├── 
   │   ├── 
   │   ├── 
   │   ├── 
   │   └── 
   │ 
   ├── application/   
-  │   ├── 
-  │   ├── 
-  │   ├── 
+  │   ├── app.py
+  │   ├── store.py
+  │   └── utils.py
   │ 
   ├── dataset/  
-  │   ├── 
-  │   ├── 
-  │   ├── 
-  │   ├── 
+  │   ├── image_collection
+  │   └── reference_images
   │ 
   ├── requirements.txt
   └── README.md
 ```
-
-
+## Installation and Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AffineAnalytics/personal_image_retriever.git
+   cd personal_image_retriever
+   ```
+2. Install required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run Streamlit application:
+   ```bash
+   streamlit run application/app.py
+   ```
 ## Tools and Technologies
 * Language: Python
 * Framework: PyTorch

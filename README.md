@@ -32,8 +32,8 @@ Here is the structure of the project:
 ```plaintext
   <Personal Image Retriever>/
   │
-  ├── assets/
-  │   ├── 
+  ├── experimentation/
+  │   ├── String_Matching_Test.py
   │   ├── 
   │   ├── 
   │   ├── 

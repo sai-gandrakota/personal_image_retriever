@@ -34,9 +34,9 @@ Here is the structure of the project:
   │
   ├── experimentation/
   │   ├── String_Matching_Test.py
-  │   ├── 
-  │   ├── 
-  │   ├── 
+  │   ├── Face_Detection_Test.py
+  │   ├── Face_Embeddings_test.py
+  │   ├── MP_MTCNN_Comp.py
   │   ├── 
   │   └── 
   │ 

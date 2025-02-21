@@ -1,4 +1,4 @@
-# Personal Image Retriever
+# SnapQuery
 
 With the increasing volume of digital images, finding specific photos in large, unorganized collections can be a tedious task. This project addresses this problem by aiming to create a smart and intuitive image retrieval system that allows users to find images based on text queries and facial recognition. The system leverages multimodal models, vector stores, and semantic search techniques to provide accurate and efficient image retrieval.
 
@@ -17,8 +17,7 @@ With the increasing volume of digital images, finding specific photos in large, 
 
 ## How It Works
 
-<img width="1000" alt="Architecture" src="https://github.com/user-attachments/assets/0f2946de-4393-4dbb-b441-d92d6e2f2213" />
-
+<img width="1000" alt="Screenshot 2025-02-20 at 20 32 42" src="https://github.com/user-attachments/assets/eb15b867-60b3-4486-9775-065bbb9d6af2" />
 
 1. **Preprocessing**: Images are processed to extract text descriptions and facial features.
 2. **Indexing**: Extracted information is stored in separate indexes for quick retrieval.
@@ -32,25 +31,34 @@ Here is the structure of the project:
 ```plaintext
   <Personal Image Retriever>/
   │
-  ├── experimentation/
-  │   ├── String_Matching_Test.py
-  │   ├── Face_Detection_Test.py
-  │   ├── Face_Embeddings_test.py
-  │   ├── MP_MTCNN_Comp.py
-  │   ├── 
-  │   └── 
-  │ 
   ├── application/   
   │   ├── app.py
   │   ├── store.py
   │   └── utils.py
   │ 
+  ├── assets/
+  │   ├── CLIP_faiss_index.index
+  │   ├── JINA_faiss_index.index
+  │   ├── face_faiss_index.index
+  │   ├── img_paths.pkl
+  │   └── ref_emb.pkl
+  │
   ├── dataset/  
   │   ├── image_collection
   │   └── reference_images
+  │
+  ├── experimentation/
+  │   ├── String_Matching_Test.py
+  │   ├── Face_Detection_Test.py
+  │   ├── Face_Embeddings_test.py
+  │   ├── MP_MTCNN_Comp.py
+  │   └── application_v1/
+  │       ├── app_v1.py
+  │       ├── store_v1.py
+  │       └── utils_v1.py
   │ 
-  ├── requirements.txt
-  └── README.md
+  ├── README.md
+  └── requirements.txt
 ```
 ## Installation and Usage
 1. Clone the repository:
@@ -58,11 +66,18 @@ Here is the structure of the project:
    git clone https://github.com/AffineAnalytics/personal_image_retriever.git
    cd personal_image_retriever
    ```
-2. Install required packages:
+2. Configure AI Hub Access:
+   -  [Create a Qualcomm® ID](https://myaccount.qualcomm.com/signup), and use it to [login to Qualcomm® AI Hub](https://app.aihub.qualcomm.com/).
+   -  Configure your [API token](https://app.aihub.qualcomm.com/account/)
+   ```bash
+   pip install qai-hub
+   qai-hub configure --api_token API_TOKEN
+   ```
+3. Install required packages:
    ```bash
    pip install -r requirements.txt
    ```
-3. Run Streamlit application:
+4. Run Streamlit application:
    ```bash
    streamlit run application/app.py
    ```

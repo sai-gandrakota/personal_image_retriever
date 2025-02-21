@@ -2,7 +2,7 @@ import os
 import time
 import torch
 import faiss
-from utils_test import load_images, load_model, get_image_embedding, load_fr_model, get_face_embeddings, create_faiss_index, save_to_pickle
+from utils import load_images, load_model, get_image_embedding, load_fr_model, get_face_embeddings, create_faiss_index, save_to_pickle
 
 # Set device (GPU if available, otherwise CPU)
 device = 'cuda' if torch.cuda.is_available() else 'cpu'

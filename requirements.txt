@@ -4,6 +4,7 @@ opencv-python-headless
 Pillow
 python_Levenshtein
 qai_hub_models
+qai-hub-models[openai-clip]
 rapidfuzz
 streamlit
 torch

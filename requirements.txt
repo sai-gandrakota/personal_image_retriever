@@ -3,8 +3,7 @@ numpy
 opencv-python-headless
 Pillow
 python_Levenshtein
-qai_hub_models
-qai-hub-models[openai-clip]
+qai-hub-models
 rapidfuzz
 streamlit
 torch

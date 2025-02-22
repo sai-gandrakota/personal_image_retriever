@@ -1,6 +1,6 @@
 faiss_cpu
 numpy
-opencv_python
+opencv-python-headless
 Pillow
 python_Levenshtein
 qai_hub_models

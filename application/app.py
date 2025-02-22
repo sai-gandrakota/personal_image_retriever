@@ -9,9 +9,7 @@ from rapidfuzz import fuzz, process
 from utils import get_text_embedding, load_model
 from utils import load_from_pickle, compute_rrf
 
-# Ensure proper handling of parallel processing issues
-os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-os.environ["QAI_HUB_AUTO_CLONE"] = "1" 
+
 # Set the device (use GPU if available, otherwise CPU)
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
